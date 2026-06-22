@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bakeonado – Artisan Bakery crafting freshly baked breads, cakes, pastries and custom celebration cakes with love." />
+  <title>Bakeonado – Artisan Bakery</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLzsA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============================
+       NAVBAR
+  ============================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="navbar__logo">
+        <span class="logo-icon">🧁</span>
+        <span class="logo-text">Bakeonado</span>
+      </a>
+
+      <nav class="navbar__nav" id="navMenu" aria-label="Main navigation">
+        <ul class="navbar__list">
+          <li><a href="#home"    class="nav-link">Home</a></li>
+          <li><a href="#about"   class="nav-link">About</a></li>
+          <li><a href="#menu"    class="nav-link">Menu</a></li>
+          <li><a href="#specials" class="nav-link">Specials</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link btn-order">Order Now</a></li>
+        </ul>
+      </nav>
+
+      <button class="navbar__toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================
+       HERO
+  ============================== -->
+  <section class="hero" id="home">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <p class="hero__tagline">Freshly baked with love 🍞</p>
+      <h1 class="hero__title">
+        Artisan Breads,<br />
+        Dreamy Cakes &amp;<br />
+        <span class="highlight">Everything Nice</span>
+      </h1>
+      <p class="hero__subtitle">
+        Hand-crafted bakes using premium ingredients – delivered to your doorstep or ready for pick-up at our bakery.
+      </p>
+      <div class="hero__cta">
+        <a href="#menu" class="btn btn--primary">Explore Our Menu</a>
+        <a href="#contact" class="btn btn--outline">Place an Order</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <a href="#about" aria-label="Scroll down"><i class="fa-solid fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- ============================
+       MARQUEE STRIP
+  ============================== -->
+  <div class="strip" aria-hidden="true">
+    <div class="strip__track">
+      <span>🍰 Custom Cakes</span><span>🥐 Croissants</span><span>🍞 Artisan Breads</span>
+      <span>🎂 Birthday Cakes</span><span>🧁 Cupcakes</span><span>🍩 Donuts</span>
+      <span>🥧 Pies &amp; Tarts</span><span>🍪 Cookies</span><span>☕ Café Items</span>
+      <!-- duplicate for seamless loop -->
+      <span>🍰 Custom Cakes</span><span>🥐 Croissants</span><span>🍞 Artisan Breads</span>
+      <span>🎂 Birthday Cakes</span><span>🧁 Cupcakes</span><span>🍩 Donuts</span>
+      <span>🥧 Pies &amp; Tarts</span><span>🍪 Cookies</span><span>☕ Café Items</span>
+    </div>
+  </div>
+
+  <!-- ============================
+       ABOUT
+  ============================== -->
+  <section class="about section" id="about">
+    <div class="container about__grid">
+      <div class="about__image-wrap">
+        <div class="about__img about__img--1" role="img" aria-label="Bakeonado bakery interior"></div>
+        <div class="about__img about__img--2" role="img" aria-label="Baker at work"></div>
+        <div class="about__badge">
+          <span class="badge-number">12+</span>
+          <span class="badge-label">Years of Baking</span>
+        </div>
+      </div>
+
+      <div class="about__text">
+        <p class="section-label">Our Story</p>
+        <h2 class="section-title">Baked Fresh, <br />Served with Love</h2>
+        <p class="about__desc">
+          Bakeonado was born out of a simple belief – that great baking changes moods, marks memories, and brings people together. Since 2012, our passionate bakers have been waking up before sunrise to fill your tables with warmth.
+        </p>
+        <p class="about__desc">
+          We source locally grown ingredients, follow time-honoured recipes, and never compromise on quality. Whether it's a rustic sourdough, a tiered wedding cake, or a box of macarons – every item leaves our oven with the same care.
+        </p>
+        <ul class="about__features">
+          <li><i class="fa-solid fa-check-circle"></i> No preservatives, no shortcuts</li>
+          <li><i class="fa-solid fa-check-circle"></i> Custom orders for every occasion</li>
+          <li><i class="fa-solid fa-check-circle"></i> 100 % vegetarian options available</li>
+          <li><i class="fa-solid fa-check-circle"></i> Eggless variants on all bestsellers</li>
+        </ul>
+        <a href="#menu" class="btn btn--primary">See What We Bake</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       MENU
+  ============================== -->
+  <section class="menu section section--alt" id="menu">
+    <div class="container">
+      <p class="section-label text-center">Our Offerings</p>
+      <h2 class="section-title text-center">The Bakeonado Menu</h2>
+      <p class="section-subtitle text-center">
+        From everyday essentials to showstopping creations – there is something delicious for everyone.
+      </p>
+
+      <!-- Category Tabs -->
+      <div class="menu__tabs" role="tablist" aria-label="Menu categories">
+        <button class="tab-btn tab-btn--active" data-target="tab-cakes"    role="tab" aria-selected="true"  aria-controls="tab-cakes">Cakes</button>
+        <button class="tab-btn"                  data-target="tab-breads"   role="tab" aria-selected="false" aria-controls="tab-breads">Breads</button>
+        <button class="tab-btn"                  data-target="tab-pastries" role="tab" aria-selected="false" aria-controls="tab-pastries">Pastries</button>
+        <button class="tab-btn"                  data-target="tab-cookies"  role="tab" aria-selected="false" aria-controls="tab-cookies">Cookies &amp; More</button>
+      </div>
+
+      <!-- Cakes -->
+      <div class="menu__panel" id="tab-cakes" role="tabpanel" aria-label="Cakes">
+        <div class="menu__grid">
+          <div class="menu-card">
+            <div class="menu-card__img menu-card__img--chocolate" role="img" aria-label="Chocolate Truffle Cake"></div>
+            <div class="menu-card__body">
+              <span class="menu-card__badge">Bestseller</span>
+              <h3 class="menu-card__name">Chocolate Truffle Cake</h3>
+              <p class="menu-card__desc">Rich Belgian chocolate layers with ganache frosting. Available in 0.5 kg – 3 kg.</p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">From ₹650</span>
+                <a href="#contact" class="btn btn--sm">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card__img menu-card__img--strawberry" role="img" aria-label="Strawberry Cream Cake"></div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__name">Strawberry Cream Cake</h3>
+              <p class="menu-card__desc">Light vanilla sponge layered with fresh strawberries and whipped cream.</p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">From ₹550</span>
+                <a href="#contact" class="btn btn--sm">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card__img menu-card__img--red-velvet" role="img" aria-label="Red Velvet Cake"></div>
+            <div class="menu-card__body">
+              <span class="menu-card__badge menu-card__badge--new">New</span>
+              <h3 class="menu-card__name">Red Velvet Cake</h3>
+              <p class="menu-card__desc">Velvety red sponge with cream cheese frosting – a timeless classic.</p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">From ₹700</span>
+                <a href="#contact" class="btn btn--sm">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card__img menu-card__img--mango" role="img" aria-label="Mango Delight Cake"></div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__name">Mango Delight Cake</h3>
+              <p class="menu-card__desc">Seasonal Alphonso mango mousse cake with mirror glaze topping.</p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">From ₹750</span>
+                <a href="#contact" class="btn btn--sm">Order</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Breads -->
+      <div class="menu__panel menu__panel--hidden" id="tab-breads" role="tabpanel" aria-label="Breads">
+        <div class="menu__grid">
+          <div class="menu-card">
+            <div class="menu-card__img menu-card__img--sourdough" role="img" aria-label="Classic Sourdough"></div>
+            <div class="menu-card__body">
+              <span class="menu-card__badge">Bestseller</span>
+              <h3 class="menu-card__name">Classic Sourdough</h3>
+              <p class="menu-card__desc">72-hour fermented sourdough with a crispy crust and chewy crumb.</p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">₹280</span>
+                <a href="#contact" class="btn btn--sm">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card__img menu-card__img--multigrain" role="img" aria-label="Multigrain Loaf"></div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__name">Multigrain Loaf</h3>
+              <p class="menu-card__desc">Seeds of sesame, flax, sunflower, and pumpkin in every wholesome slice.</p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">₹260</span>
+                <a href="#contact" class="btn btn--sm">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card__img menu-card__img--focaccia" role="img" aria-label="Rosemary Focaccia"></div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__name">Rosemary Focaccia</h3>
+              <p class="menu-card__desc">Olive-oil drizzled focaccia with fresh rosemary, olives, and sea salt.</p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">₹220</span>
+                <a href="#contact" class="btn btn--sm">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card__img menu-card__img--brioche" role="img" aria-label="Butter Brioche"></div>
+            <div class="menu-card__body">
+              <span class="menu-card__badge menu-card__badge--new">New</span>
+              <h3 class="menu-card__name">Butter Brioche</h3>
+              <p class="menu-card__desc">French-style enriched dough, cloud-like texture, golden crust.</p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">₹240</span>
+                <a href="#contact" class="btn btn--sm">Order</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pastries -->
+      <div class="menu__panel menu__panel--hidden" id="tab-pastries" role="tabpanel" aria-label="Pastries">
+        <div class="menu__grid">
+          <div class="menu-card">
+            <div class="menu-card__img menu-card__img--croissant" role="img" aria-label="Butter Croissant"></div>
+            <div class="menu-card__body">
+              <span class="menu-card__badge">Bestseller</span>
+              <h3 class="menu-card__name">Butter Croissant</h3>
+              <p class="menu-card__desc">729 layers of flaky, buttery perfection. Best enjoyed warm.</p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">₹80</span>
+                <a href="#contact" class="btn btn--sm">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card__img menu-card__img--danish" role="img" aria-label="Danish Pastry"></div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__name">Fruit Danish</h3>
+              <p class="menu-card__desc">Laminated dough filled with pastry cream and seasonal fruit.</p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">₹90</span>
+                <a href="#contact" class="btn btn--sm">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card__img menu-card__img--tart" role="img" aria-label="Lemon Tart"></div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__name">Lemon Tart</h3>
+              <p class="menu-card__desc">Buttery shortcrust filled with silky lemon curd, toasted meringue on top.</p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">₹110</span>
+                <a href="#contact" class="btn btn--sm">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card__img menu-card__img--eclair" role="img" aria-label="Chocolate Eclair"></div>
+            <div class="menu-card__body">
+              <span class="menu-card__badge menu-card__badge--new">New</span>
+              <h3 class="menu-card__name">Chocolate Éclair</h3>
+              <p class="menu-card__desc">Choux pastry filled with vanilla custard and topped with chocolate glaze.</p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">₹95</span>
+                <a href="#contact" class="btn btn--sm">Order</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cookies & More -->
+      <div class="menu__panel menu__panel--hidden" id="tab-cookies" role="tabpanel" aria-label="Cookies and More">
+        <div class="menu__grid">
+          <div class="menu-card">
+            <div class="menu-card__img menu-card__img--choc-chip" role="img" aria-label="Chocolate Chip Cookies"></div>
+            <div class="menu-card__body">
+              <span class="menu-card__badge">Bestseller</span>
+              <h3 class="menu-card__name">Choco-Chip Cookies</h3>
+              <p class="menu-card__desc">Crispy edges, gooey centre – packed with premium dark chocolate chips.</p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">₹30 each</span>
+                <a href="#contact" class="btn btn--sm">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card__img menu-card__img--macaron" role="img" aria-label="French Macarons"></div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__name">French Macarons</h3>
+              <p class="menu-card__desc">Delicate almond meringue shells with flavoured buttercream fillings.</p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">₹65 each</span>
+                <a href="#contact" class="btn btn--sm">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card__img menu-card__img--brownie" role="img" aria-label="Fudge Brownie"></div>
+            <div class="menu-card__body">
+              <span class="menu-card__badge menu-card__badge--new">New</span>
+              <h3 class="menu-card__name">Fudge Brownie</h3>
+              <p class="menu-card__desc">Dense, fudgy brownies with a crinkle top – pure indulgence.</p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">₹60 each</span>
+                <a href="#contact" class="btn btn--sm">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card__img menu-card__img--cupcake" role="img" aria-label="Signature Cupcakes"></div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__name">Signature Cupcakes</h3>
+              <p class="menu-card__desc">Moist vanilla or chocolate base with swirled buttercream. Available by the dozen.</p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">₹55 each</span>
+                <a href="#contact" class="btn btn--sm">Order</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       SPECIALS / OCCASIONS
+  ============================== -->
+  <section class="specials section" id="specials">
+    <div class="container">
+      <p class="section-label text-center">Made for Moments</p>
+      <h2 class="section-title text-center">Celebrate with Bakeonado</h2>
+      <p class="section-subtitle text-center">Custom creations for life's sweetest milestones.</p>
+
+      <div class="specials__grid">
+        <div class="special-card special-card--wedding">
+          <div class="special-card__overlay">
+            <h3>Wedding Cakes</h3>
+            <p>Tiered masterpieces that match your dream day.</p>
+            <a href="#contact" class="btn btn--outline btn--sm">Enquire</a>
+          </div>
+        </div>
+        <div class="special-card special-card--birthday">
+          <div class="special-card__overlay">
+            <h3>Birthday Cakes</h3>
+            <p>Personalised cakes with custom toppers and flavours.</p>
+            <a href="#contact" class="btn btn--outline btn--sm">Enquire</a>
+          </div>
+        </div>
+        <div class="special-card special-card--corporate">
+          <div class="special-card__overlay">
+            <h3>Corporate Orders</h3>
+            <p>Branded dessert boxes, hampers &amp; bulk orders.</p>
+            <a href="#contact" class="btn btn--outline btn--sm">Enquire</a>
+          </div>
+        </div>
+        <div class="special-card special-card--festival">
+          <div class="special-card__overlay">
+            <h3>Festival Specials</h3>
+            <p>Season-limited flavours and festive hampers.</p>
+            <a href="#contact" class="btn btn--outline btn--sm">Enquire</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       STATS STRIP
+  ============================== -->
+  <section class="stats-strip">
+    <div class="container stats-strip__grid">
+      <div class="stat-item">
+        <span class="stat-number" data-target="12">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">Years of Craft</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="50000">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">Happy Customers</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="120">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">Menu Items</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="4800">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">Custom Cakes Delivered</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       GALLERY
+  ============================== -->
+  <section class="gallery section section--alt" id="gallery">
+    <div class="container">
+      <p class="section-label text-center">A Peek Inside</p>
+      <h2 class="section-title text-center">Our Bake Gallery</h2>
+      <p class="section-subtitle text-center">Real bakes from our oven – each one made with pride.</p>
+
+      <div class="gallery__grid">
+        <div class="gallery-item gallery-item--tall gallery-item--1" role="img" aria-label="Elaborate wedding cake"></div>
+        <div class="gallery-item gallery-item--2" role="img" aria-label="Assorted croissants"></div>
+        <div class="gallery-item gallery-item--3" role="img" aria-label="Artisan sourdough loaves"></div>
+        <div class="gallery-item gallery-item--wide gallery-item--4" role="img" aria-label="Macaron tower"></div>
+        <div class="gallery-item gallery-item--5" role="img" aria-label="Birthday cake with flowers"></div>
+        <div class="gallery-item gallery-item--6" role="img" aria-label="Fresh pastry display"></div>
+        <div class="gallery-item gallery-item--7" role="img" aria-label="Chocolate brownies tray"></div>
+        <div class="gallery-item gallery-item--wide gallery-item--8" role="img" aria-label="Bakeonado bakery storefront"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       TESTIMONIALS
+  ============================== -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <p class="section-label text-center">Kind Words</p>
+      <h2 class="section-title text-center">What Our Customers Say</h2>
+
+      <div class="testimonials__slider" id="testimonialSlider">
+        <div class="testimonial-card active">
+          <div class="testimonial-card__stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-card__text">"Bakeonado's chocolate truffle cake was the highlight of our anniversary dinner. The ganache was perfectly balanced – not too sweet, absolutely divine. Will order again!"</p>
+          <div class="testimonial-card__author">
+            <div class="author-avatar author-avatar--1"></div>
+            <div>
+              <strong>Priya Sharma</strong>
+              <span>Mumbai</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-card__text">"The sourdough bread has completely replaced my supermarket loaf. That crust, that crumb – it's the real deal. I order two loaves every weekend without fail."</p>
+          <div class="testimonial-card__author">
+            <div class="author-avatar author-avatar--2"></div>
+            <div>
+              <strong>Arjun Mehta</strong>
+              <span>Pune</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="testimonial-card__text">"Ordered a 3-tier wedding cake and Bakeonado exceeded every expectation. The team was responsive, the design was flawless, and it tasted incredible. Highly recommended!"</p>
+          <div class="testimonial-card__author">
+            <div class="author-avatar author-avatar--3"></div>
+            <div>
+              <strong>Neha &amp; Rohan Verma</strong>
+              <span>Delhi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-card__text">"The French macarons are straight out of Paris! Delicate shells, perfect fillings. I ordered two dozen for a corporate event and everyone was raving about them."</p>
+          <div class="testimonial-card__author">
+            <div class="author-avatar author-avatar--4"></div>
+            <div>
+              <strong>Kavya Nair</strong>
+              <span>Bengaluru</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials__controls">
+        <button class="slide-btn" id="prevSlide" aria-label="Previous review">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <div class="slide-dots" id="slideDots"></div>
+        <button class="slide-btn" id="nextSlide" aria-label="Next review">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       CONTACT / ORDER
+  ============================== -->
+  <section class="contact section section--alt" id="contact">
+    <div class="container contact__grid">
+
+      <div class="contact__info">
+        <p class="section-label">Get in Touch</p>
+        <h2 class="section-title">Place an Order or<br />Visit Our Bakery</h2>
+        <p class="contact__desc">We'd love to bake for you! Fill out the form, call us, or swing by the bakery.</p>
+
+        <ul class="contact__details">
+          <li>
+            <span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+            <div>
+              <strong>Find Us</strong>
+              <span>42, Crumble Lane, Baker Street,<br />Mumbai – 400 001</span>
+            </div>
+          </li>
+          <li>
+            <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+            <div>
+              <strong>Call Us</strong>
+              <a href="tel:+912212345678">+91 22 1234 5678</a>
+            </div>
+          </li>
+          <li>
+            <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+            <div>
+              <strong>Email Us</strong>
+              <a href="mailto:hello@bakeonado.com">hello@bakeonado.com</a>
+            </div>
+          </li>
+          <li>
+            <span class="contact-icon"><i class="fa-solid fa-clock"></i></span>
+            <div>
+              <strong>Bakery Hours</strong>
+              <span>Mon – Sat: 7 AM – 9 PM<br />Sunday: 8 AM – 7 PM</span>
+            </div>
+          </li>
+        </ul>
+
+        <div class="contact__social">
+          <a href="#" aria-label="Instagram" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"  class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="WhatsApp"  class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" aria-label="YouTube"   class="social-link"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="contact__form-wrap">
+        <form class="contact__form" id="orderForm" novalidate>
+          <h3>Place Your Order / Enquiry</h3>
+
+          <div class="form-group">
+            <label for="name">Your Name <span class="req">*</span></label>
+            <input type="text" id="name" name="name" placeholder="e.g. Priya Sharma" required />
+            <span class="form-error" id="nameError"></span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email <span class="req">*</span></label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone <span class="req">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required />
+              <span class="form-error" id="phoneError"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="occasion">Occasion</label>
+            <select id="occasion" name="occasion">
+              <option value="">— Select occasion —</option>
+              <option>Birthday</option>
+              <option>Anniversary</option>
+              <option>Wedding</option>
+              <option>Corporate Event</option>
+              <option>Festival / Celebration</option>
+              <option>Everyday / Regular Order</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Order Details / Message <span class="req">*</span></label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us what you'd like to order – flavour, size, date needed, dietary requirements, etc." required></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="delivery">Preferred Date</label>
+            <input type="date" id="delivery" name="delivery" />
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">
+            <i class="fa-solid fa-paper-plane"></i> Send Enquiry
+          </button>
+
+          <p class="form-note">We typically respond within 2–4 hours during bakery hours.</p>
+        </form>
+
+        <!-- Success message (hidden by default) -->
+        <div class="form-success" id="formSuccess" hidden>
+          <i class="fa-solid fa-circle-check"></i>
+          <h3>Thank you!</h3>
+          <p>Your enquiry has been received. Our team will reach out to you shortly. 🎂</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       FOOTER
+  ============================== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#home" class="navbar__logo">
+          <span class="logo-icon">🧁</span>
+          <span class="logo-text">Bakeonado</span>
+        </a>
+        <p>Freshly baked joy, delivered with love. Your trusted artisan bakery since 2012.</p>
+        <div class="contact__social">
+          <a href="#" aria-label="Instagram" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"  class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="WhatsApp"  class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" aria-label="YouTube"   class="social-link"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#specials">Special Orders</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__links">
+        <h4>Our Bakes</h4>
+        <ul>
+          <li><a href="#menu">Celebration Cakes</a></li>
+          <li><a href="#menu">Artisan Breads</a></li>
+          <li><a href="#menu">Pastries &amp; Croissants</a></li>
+          <li><a href="#menu">Cookies &amp; Macarons</a></li>
+          <li><a href="#menu">Cupcakes</a></li>
+          <li><a href="#specials">Wedding Cakes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__newsletter">
+        <h4>Stay in the Loop</h4>
+        <p>Get seasonal specials and new flavour announcements straight to your inbox.</p>
+        <form class="newsletter-form" id="newsletterForm" novalidate>
+          <input type="email" name="newsletter-email" placeholder="your@email.com" aria-label="Newsletter email" required />
+          <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+        <p class="footer__hours">
+          <i class="fa-solid fa-clock"></i>
+          Mon–Sat: 7 AM–9 PM &nbsp;|&nbsp; Sun: 8 AM–7 PM
+        </p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Bakeonado. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Use</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
