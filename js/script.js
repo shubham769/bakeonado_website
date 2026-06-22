@@ -167,7 +167,7 @@
         const duration = 1800;
         const start = performance.now();
 
-        const locale = navigator.language || 'en';
+        const locale = navigator.language || 'en-US';
 
         function update(now) {
           const elapsed  = now - start;
@@ -236,24 +236,24 @@
       }
 
       // Email – rely on the browser's built-in type="email" validation;
-      // additionally check with a tighter pattern that requires a valid TLD
+      // additionally require a domain of at least 2 chars and a valid TLD
       clearError('email', 'emailError');
       const emailVal = document.getElementById('email').value.trim();
-      const emailRegex = /^[^\s@]+@[^\s@][^\s@]*\.[a-zA-Z]{2,}$/;
+      const emailRegex = /^[^\s@]+@[a-zA-Z0-9]([a-zA-Z0-9-]*[a-zA-Z0-9])?(\.[a-zA-Z0-9]([a-zA-Z0-9-]*[a-zA-Z0-9])?)*\.[a-zA-Z]{2,}$/;
       if (!emailVal) {
         showError('email', 'emailError', 'Please enter your email.');
       } else if (!emailRegex.test(emailVal)) {
         showError('email', 'emailError', 'Please enter a valid email address.');
       }
 
-      // Phone – must start with an optional '+', then contain 7–15 digits
-      // allowing spaces, hyphens, and parentheses as separators
+      // Phone – optional leading '+', then 7–15 digits with optional separators
+      // (spaces, hyphens, parentheses) between digit groups
       clearError('phone', 'phoneError');
       const phoneVal = document.getElementById('phone').value.trim();
-      const phoneRegex = /^\+?\d[\d\s\-()\d]{5,18}\d$/;
+      const phoneRegex = /^\+?\d{1,4}[\s\-]?(\(?\d{1,4}\)?[\s\-]?)?\d{3,4}[\s\-]?\d{3,4}[\s\-]?\d{0,4}$/;
       if (!phoneVal) {
         showError('phone', 'phoneError', 'Please enter your phone number.');
-      } else if (!phoneRegex.test(phoneVal)) {
+      } else if (!phoneRegex.test(phoneVal) || (phoneVal.match(/\d/g) || []).length < 7) {
         showError('phone', 'phoneError', 'Please enter a valid phone number.');
       }
 
