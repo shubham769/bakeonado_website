@@ -167,7 +167,7 @@
         const duration = 1800;
         const start = performance.now();
 
-        const locale = navigator.language || 'en-IN';
+        const locale = navigator.language || 'en';
 
         function update(now) {
           const elapsed  = now - start;
@@ -235,20 +235,22 @@
         showError('name', 'nameError', 'Please enter your name.');
       }
 
-      // Email
+      // Email – rely on the browser's built-in type="email" validation;
+      // additionally check with a tighter pattern that requires a valid TLD
       clearError('email', 'emailError');
       const emailVal = document.getElementById('email').value.trim();
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const emailRegex = /^[^\s@]+@[^\s@][^\s@]*\.[a-zA-Z]{2,}$/;
       if (!emailVal) {
         showError('email', 'emailError', 'Please enter your email.');
       } else if (!emailRegex.test(emailVal)) {
         showError('email', 'emailError', 'Please enter a valid email address.');
       }
 
-      // Phone
+      // Phone – must start with an optional '+', then contain 7–15 digits
+      // allowing spaces, hyphens, and parentheses as separators
       clearError('phone', 'phoneError');
       const phoneVal = document.getElementById('phone').value.trim();
-      const phoneRegex = /^[+\d\s\-()]{7,20}$/;
+      const phoneRegex = /^\+?\d[\d\s\-()\d]{5,18}\d$/;
       if (!phoneVal) {
         showError('phone', 'phoneError', 'Please enter your phone number.');
       } else if (!phoneRegex.test(phoneVal)) {
