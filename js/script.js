@@ -167,16 +167,18 @@
         const duration = 1800;
         const start = performance.now();
 
+        const locale = navigator.language || 'en-IN';
+
         function update(now) {
           const elapsed  = now - start;
           const progress = Math.min(elapsed / duration, 1);
           // ease-out cubic
           const eased = 1 - Math.pow(1 - progress, 3);
-          el.textContent = Math.floor(eased * target).toLocaleString('en-IN');
+          el.textContent = Math.floor(eased * target).toLocaleString(locale);
           if (progress < 1) {
             requestAnimationFrame(update);
           } else {
-            el.textContent = target.toLocaleString('en-IN');
+            el.textContent = target.toLocaleString(locale);
           }
         }
         requestAnimationFrame(update);
